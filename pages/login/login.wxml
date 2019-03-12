@@ -1,0 +1,9 @@
+
+<view class='buttonWrap'>
+
+  <button open-type='getPhoneNumber'  bindgetphonenumber='bindgetphonenumber'>
+    <view class='textWrap'>
+      <image src='/images/wxIcon.png' mode='widthFix'></image> 微信用户快速登录
+    </view>
+  </button>
+</view>

@@ -1,0 +1,33 @@
+.headerImg{
+width: 100%;
+/* height: 300rpx; */
+}
+.buttonWrap{
+position: absolute;
+top: 0;
+bottom: 0;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.buttonWrap button{
+width: 670rpx;
+height: 92rpx;
+background: #1AAD19;
+border-radius: 16rpx;
+font-size: 36rpx;
+color: #FFFFFF;
+text-align: center;
+line-height: 92rpx;
+border: none;
+}
+.buttonWrap button image{
+  width: 52rpx;
+  vertical-align: middle;
+}
+.textWrap{
+  display: table-cell;
+  width: 670rpx;
+  text-align: center;
+}

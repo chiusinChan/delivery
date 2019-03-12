@@ -1,0 +1,114 @@
+<view class='bottomShadow'></view>
+<view class='bodyWrap'>
+  <view class='tabTitle'>
+    <view class='noyet select'>未完成
+      <view class='selectBorder'></view>
+    </view>
+    <view class='finish'>已完成
+      <view class='selectBorder'></view>
+
+    </view>
+
+
+  </view>
+
+  <view class='tabContent'>
+    <view class='contentItem'>
+      <view class='orderStatus'>
+        <view class='id'>
+          订单号：21321334231413
+        </view>
+        <view class='status'>
+          未完成
+        </view>
+      </view>
+      <view class='orderInfo'>
+        <view class='address'>广州珠江新城花城大道128号</view>
+        <view class='time'>2019-02-01 16:34</view>
+
+      </view>
+      <view class='goodsInfo'>
+        <view class='goodsImgs'>
+          <image src='http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'></image>
+          <image src="http://fuss10.elemecdn.com/4/e7/8277a6a2ea0a2e97710290499fc41jpeg.jpeg?imageView2/1/w/114/h/114"></image>
+        </view>
+        <view class='goodsDes'>海鲜PIZZA、汉堡包等2件商品</view>
+
+      </view>
+      <view class='more'>
+        <view class='price'>￥128</view>
+        <view class='again'>再来一单</view>
+
+      </view>
+
+
+
+    </view>
+
+     <view class='contentItem'>
+      <view class='orderStatus'>
+        <view class='id'>
+          订单号：21321334231413
+        </view>
+        <view class='status'>
+          未完成
+        </view>
+      </view>
+      <view class='orderInfo'>
+        <view class='address'>广州珠江新城花城大道128号</view>
+        <view class='time'>2019-02-01 16:34</view>
+
+      </view>
+      <view class='goodsInfo'>
+        <view class='goodsImgs'>
+          <image src='http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'></image>
+          <image src="http://fuss10.elemecdn.com/4/e7/8277a6a2ea0a2e97710290499fc41jpeg.jpeg?imageView2/1/w/114/h/114"></image>
+        </view>
+        <view class='goodsDes'>海鲜PIZZA、汉堡包等2件商品</view>
+
+      </view>
+      <view class='more'>
+        <view class='price'>￥128</view>
+        <view class='again'>再来一单</view>
+
+      </view>
+
+
+
+    </view>
+
+     <view class='contentItem'>
+      <view class='orderStatus'>
+        <view class='id'>
+          订单号：21321334231413
+        </view>
+        <view class='status'>
+          未完成
+        </view>
+      </view>
+      <view class='orderInfo'>
+        <view class='address'>广州珠江新城花城大道128号</view>
+        <view class='time'>2019-02-01 16:34</view>
+
+      </view>
+      <view class='goodsInfo'>
+        <view class='goodsImgs'>
+          <image src='http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'></image>
+          <image src="http://fuss10.elemecdn.com/4/e7/8277a6a2ea0a2e97710290499fc41jpeg.jpeg?imageView2/1/w/114/h/114"></image>
+        </view>
+        <view class='goodsDes'>海鲜PIZZA、汉堡包等2件商品</view>
+
+      </view>
+      <view class='more'>
+        <view class='price'>￥128</view>
+        <view class='again'>再来一单</view>
+
+      </view>
+
+
+
+    </view>
+
+  </view>
+
+</view>

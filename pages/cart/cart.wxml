@@ -1,0 +1,82 @@
+<view class='bottomShadow'>
+</view>
+<view class='bodyWrap'>
+  <view class="bottomSum">
+    <view class='sumMoney'>
+      应付合计
+      <text>  ￥{{sumMoney/100}}</text>
+    </view>
+    <view class='sumButton'>结算</view>
+  </view>
+
+
+  <view class='deliveryInfo'>
+    <view class='infoItem'>
+      <view class='infoKey'>收货人</view>
+      <view class='infoValue'>
+        <input></input>
+      </view>
+    </view>
+
+    <view class='infoItem'>
+      <view class='infoKey'>手机号码</view>
+      <view class='infoValue'>
+        <input></input>
+      </view>
+    </view>
+
+    <view class='infoItem'>
+      <view class='infoKey'>地址信息</view>
+      <view class='infoValue'>
+        <input></input>
+        <view class='logo'>
+          <image src='/images/location.png'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='infoItem'>
+      <view class='infoKey'>详细地址</view>
+      <view class='infoValue'>
+        <input></input>
+      </view>
+    </view>
+  </view>
+  <view class='goodsItem'>
+    <view class='item' wx:for="{{list}}" wx:if="{{item.num}}">
+      <view class='btn'>
+        <image src='/images/select.png'></image>
+
+      </view>
+      <view class='title'>
+        <view class='name'>{{item.name}}</view>
+        <view class='des'>{{item.des}}</view>
+
+      </view>
+      <view class='price'>
+        ￥{{item.price/100}}
+      </view>
+      <view class='store'>
+
+        <view class='minus' data-id="{{item.id}}" bindtap='minus'>
+          <image src='/images/delete.png'></image>
+
+        </view>
+        <view class='num'>{{item.num}}</view>
+
+        <view class='plus' bindtap='add' data-id="{{item.id}}">
+          <image src='/images/add.png'></image>
+        </view>
+      </view>
+    </view>
+    
+
+
+  </view>
+
+
+
+
+
+
+</view>

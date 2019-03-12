@@ -1,0 +1,66 @@
+.avatar{
+  height: 224rpx;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.avatarArea{
+position: absolute;
+height: 118rpx;
+line-height: 118rpx;
+top: 50%;
+left: 30rpx;
+right: 0rpx;
+transform: translateY(-50%);
+}
+.avatarArea .avatarName{
+position: absolute;
+height: 118rpx;
+line-height: 118rpx;
+top: 50%;
+left: 144rpx;
+right: 0rpx;
+transform: translateY(-50%);
+font-size: 30rpx;
+}
+
+.avatarImg{
+height: 118rpx;
+width: 118rpx;  
+border-radius: 50%;
+}
+.list{
+  padding: 0 32rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+.list .item{
+  height: 107rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+  position: relative;
+}
+
+.list .item .title{
+  position: absolute;
+height: 30rpx;
+top: 50%;
+left: 0rpx;
+right: 0rpx;
+transform: translateY(-50%);
+}
+
+
+.list .item .logo{
+  height: 35rpx;
+  width: 35rpx;
+  float: left;
+}
+.list .item .des{
+  font-size: 27rpx;
+  font-weight: 600;
+  color: #333;
+  margin-left: 30rpx;
+  float: left;
+
+}

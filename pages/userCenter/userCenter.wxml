@@ -1,0 +1,42 @@
+<view class='bottomShadow'></view>
+<view class='avatar'>
+<view class='avatarArea'>
+<image class='avatarImg' src='/images/avatar.png'></image>
+<view class='avatarName'>MAN</view>
+</view>
+</view>
+
+<view class='list'>
+
+<view class='item'>
+<view class='title'>
+<image class='logo' src='/images/mine_icon1.png'></image>
+<view class='des'>钱包</view>
+</view>
+
+</view>
+
+<view class='item'>
+<view class='title'>
+<image class='logo' src='/images/mine_icon2.png'></image>
+<view class='des'>优惠券</view>
+</view>
+
+</view>
+
+<view class='item'>
+<view class='title'>
+<image class='logo' src='/images/mine_icon3.png'></image>
+<view class='des'>电子发票</view>
+</view>
+
+</view>
+
+<view class='item'>
+<view class='title'>
+<image class='logo' src='/images/mine_icon4.png'></image>
+<view class='des'>客服</view>
+</view>
+
+</view>
+</view>

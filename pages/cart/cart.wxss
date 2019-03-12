@@ -1,0 +1,175 @@
+.bodyWrap {
+  background-color: rgb(250, 246, 246);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.bottomSum {
+  position: fixed;
+  bottom: 0;
+  height: 112rpx;
+  width: 100%;
+  background-color: #fff;
+}
+
+.bottomSum .sumMoney {
+  float: left;
+  width: 440rpx;
+  line-height: 112rpx;
+  height: 100%;
+  font-size: 24rpx;
+  padding-left: 32rpx;
+}
+
+.bottomSum .sumMoney text {
+  font-size: 36rpx;
+}
+
+.bottomSum .sumButton {
+  overflow: hidden;
+  height: 100%;
+  background-color: #d95b67;
+  color: #fff;
+  line-height: 112rpx;
+  text-align: center;
+}
+
+.deliveryInfo {
+  background-color: #fff;
+  height: 364rpx;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx 30rpx 22rpx 33rpx;
+  margin-bottom: 10rpx;
+}
+
+.deliveryInfo .infoItem {
+  height: 79rpx;
+  box-sizing: border-box;
+  line-height: 79rpx;
+}
+
+.deliveryInfo .infoItem .infoKey {
+  font-size: 29rpx;
+  color: #999;
+  float: left;
+  line-height: 79rpx;
+  height: 79rpx;
+}
+
+.deliveryInfo .infoItem .infoValue {
+  font-size: 29rpx;
+  box-sizing: border-box;
+  line-height: 79rpx;
+  height: 79rpx;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+  width: 542rpx;
+  float: right;
+  position: relative;
+}
+
+.deliveryInfo .infoItem .infoValue input {
+  position: absolute;
+  bottom: 13rpx;
+  left: 0;
+  right: 50rpx;
+}
+
+.deliveryInfo .infoItem .infoValue .logo {
+  position: absolute;
+  width: 24rpx;
+  height: 30rpx;
+  bottom: 25rpx;
+  right: 0;
+}
+
+.deliveryInfo .infoItem .infoValue .logo image {
+  width: 24rpx;
+  vertical-align: top;
+  height: 30rpx;
+}
+
+.goodsItem {
+  position: absolute;
+  width: 100%;
+  bottom: 112rpx;
+  top: 374rpx;
+  overflow: scroll;
+}
+
+.goodsItem .item {
+  background-color: #fff;
+  height: 120rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.goodsItem .item>view{
+  float: left;
+}
+
+.goodsItem .item + .item {
+  border-top: 1rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.goodsItem .item .btn {
+  width: 73rpx;
+  position: relative;
+  height: 100%;
+}
+
+.goodsItem .item .btn image {
+  width: 46rpx;
+  height: 46rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  
+}
+.goodsItem .item .title{
+  margin-top: 37rpx;
+}
+
+.goodsItem .item .title .name {
+  font-size: 29rpx;
+}
+.goodsItem .item .title .des {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.goodsItem .item .price {
+ position: absolute;
+ font-size: 29rpx;
+  top: 37rpx;
+  left: 514rpx;
+  transform: translateX(-50%);
+}
+
+.goodsItem .item .store{
+  float: right;
+  padding:6rpx 10rpx;
+  box-sizing:  border-box;
+  display: flex;
+  height: 100%;
+  width: 183rpx;
+  justify-content: space-around;
+  align-items: center;
+}
+.goodsItem .item .store image{
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.goodsItem .item .store>view{
+  float: left;
+  color: #DB616C;
+  line-height: 120rpx;
+  font-size: 29rpx;
+}
+.goodsItem .item .store .num{
+  margin-top: -10rpx;
+}

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/cart/cart",
+    "pages/orders/orders",
+    "pages/userCenter/userCenter"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "餐饮小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#CCCCCC",
+    "selectedColor": "#D95B67",
+    "borderStyle": "white",
+    "backgroundColor":"#fff",
+    "list": [
+      {
+        "selectedIconPath": "images/icon1.png",
+        "iconPath": "images/icon1_2.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/icon4_1.png",
+        "iconPath": "images/icon4.png",
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "images/icon2_2.png",
+        "iconPath": "images/icon2.png",
+        "pagePath": "pages/orders/orders",
+        "text": "订单"
+      },
+      {
+        "selectedIconPath": "images/icon3_2.png",
+        "iconPath": "images/icon3.png",
+        "pagePath": "pages/userCenter/userCenter",
+        "text": "我的"
+      }
+    ]
+  }
+}
