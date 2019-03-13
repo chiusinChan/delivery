@@ -2,6 +2,8 @@
 const app = getApp();
 let lib = require('../../utils/util.js');
 let vm;
+import initAreaPicker, { getSelectedAreaData } from '../template/index';
+
 
 
 Page({
@@ -17,7 +19,8 @@ Page({
       phone:"",
       area:"",
       address:""
-    }
+    },
+    selectShow:false
 
   },
 
@@ -26,6 +29,9 @@ Page({
    */
   onLoad: function (options) {
     vm=this;
+    vm.setData({
+      reciverInfo: wx.getStorageSync("reciverInfo")
+    })
 
   },
 
@@ -40,9 +46,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    initAreaPicker({
+      // hideDistrict: true, // 是否隐藏区县选择栏，默认显示
+    });
     this.setData({
       list: app.globalData.cart,
-      reciverInfo: wx.getStorageSync("reciverInfo")
     })
     vm.accountMoney()
    
@@ -118,9 +126,22 @@ Page({
     })
 
   },
-  inputArea({ detail }) {
+  selectShow() {
+    console.log("show")
+    this.setData({ selectShow: true })
+
+
+  },
+  selectHide() {
+    this.setData({ selectShow: false })
+    var tem = getSelectedAreaData();
+    var temArea = [];
+    tem.map((item) => {
+      temArea.push(item.fullName)
+
+    })
     vm.setData({
-      ['reciverInfo.area']: detail.value
+      ['reciverInfo.area']: temArea.join("")
     })
 
   },

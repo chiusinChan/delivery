@@ -28,7 +28,7 @@
     <view class='infoItem'>
       <view class='infoKey'>地址信息</view>
       <view class='infoValue'>
-        <input value='{{reciverInfo.area}}' bindinput='inputArea'></input>
+        <view class='input'  bindtap='selectShow'>{{reciverInfo.area}}</view>
         <view class='logo'>
           <image bindtap='chooseAddress' src='/images/location.png'></image>
         </view>
@@ -80,3 +80,6 @@
 
 
 </view>
+<import src="../template/index.wxml"/>
+<view class='confrimArea'wx:if="{{selectShow}}"  bindtap='selectHide'> 确定</view>
+<template wx:if="{{selectShow}}" is="areaPicker" data="{{...areaPicker}}" />

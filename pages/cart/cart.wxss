@@ -1,3 +1,5 @@
+@import '../template/index.wxss';
+
 .bodyWrap {
   background-color: rgb(250, 246, 246);
   position: absolute;
@@ -5,6 +7,19 @@
   right: 0;
   top: 0;
   bottom: 0;
+}
+.confrimArea{
+  position: fixed;
+  left: 0;
+  bottom: 300rpx;
+  font-size: 29rpx;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx 40rpx;
+  justify-content: flex-end;
+  background-color: #fff;
+
 }
 
 .bottomSum {
@@ -71,11 +86,15 @@
   position: relative;
 }
 
-.deliveryInfo .infoItem .infoValue input {
+.deliveryInfo .infoItem .infoValue input,.deliveryInfo .infoItem .infoValue .input {
   position: absolute;
   bottom: 13rpx;
   left: 0;
   right: 50rpx;
+}
+.deliveryInfo .infoItem .infoValue .input {
+ height: 43rpx;
+ line-height: 35rpx;
 }
 
 .deliveryInfo .infoItem .infoValue .logo {
@@ -173,3 +192,4 @@
 .goodsItem .item .store .num{
   margin-top: -10rpx;
 }
+
