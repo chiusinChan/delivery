@@ -4,7 +4,8 @@
     "pages/login/login",
     "pages/cart/cart",
     "pages/orders/orders",
-    "pages/userCenter/userCenter"
+    "pages/userCenter/userCenter",
+    "pages/success/success"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,7 +17,7 @@
     "color": "#CCCCCC",
     "selectedColor": "#D95B67",
     "borderStyle": "white",
-    "backgroundColor":"#fff",
+    "backgroundColor": "#fff",
     "list": [
       {
         "selectedIconPath": "images/icon1.png",

@@ -1,17 +1,23 @@
 // pages/userCenter/userCenter.js
+var app = getApp();
+var vm;
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+      user:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    vm=this;
+    vm.setData({ user: app.globalData.userInfo})
+   
     
 
   },
@@ -21,6 +27,9 @@ Page({
    */
   onReady: function () {
 
+  },
+  makePhoneCall(){
+    wx.makePhoneCall({ phoneNumber:"13500000000"})
   },
 
   /**

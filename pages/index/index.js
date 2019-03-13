@@ -37,6 +37,8 @@ Page({
             des: "large/hot",
             price: "2500",
             num: 0,
+            sold: 123,
+            store: 20,
             id: 1,
             img: 'http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'
           },
@@ -45,6 +47,8 @@ Page({
             des: "large/hot",
             price: "2500",
             num: 0,
+            sold: 123,
+            store: 20,
             id: 2,
             img: 'http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'
           },
@@ -53,6 +57,8 @@ Page({
             des: "large/hot",
             price: "2500",
             num: 0,
+            sold: 123,
+            store: 20,
             id: 3,
             img: 'http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'
           }
@@ -66,6 +72,8 @@ Page({
             des: "large/hot",
             price: "2500",
             num: 0,
+            sold: 123,
+            store: 20,
             id: 4,
             img: 'http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'
           },
@@ -74,6 +82,8 @@ Page({
             des: "large/hot",
             price: "2500",
             num: 0,
+            sold: 123,
+            store: 20,
             id: 5,
             img: 'http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'
           },
@@ -82,6 +92,8 @@ Page({
             des: "large/hot",
             price: "2500",
             num: 0,
+            sold: 123,
+            store: 20,
             id: 6,
             img: 'http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'
           }
@@ -94,6 +106,8 @@ Page({
             des: "large/hot",
             price: "2500",
             num: 0,
+            sold: 123,
+            store: 20,
             id: 7,
             img: 'http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'
           },
@@ -102,6 +116,8 @@ Page({
             des: "large/hot",
             price: "2500",
             num: 0,
+            sold: 123,
+            store: 20,
             id: 8,
             img: 'http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'
           },
@@ -110,6 +126,8 @@ Page({
             des: "large/hot",
             price: "2500",
             num: 0,
+            sold: 123,
+            store: 20,
             id: 9,
             img: 'http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'
           }
@@ -120,7 +138,8 @@ Page({
     toView: ""
   },
 
-  onLoad: function() {
+  onLoad: function(op) {
+    console.log(op)
     vm = this;
     var accessToken = wx.getStorageSync('access_token');
     if (!accessToken){
@@ -149,6 +168,9 @@ Page({
   add(event) {
     var curId = event.currentTarget.dataset.id;
     var curNum = event.currentTarget.dataset.num;
+    var curStore = event.currentTarget.dataset.store;
+    if (curStore == curNum)return;
+
     var temItem = {};
 
     this.data.goodsList.map((item, index) => {
@@ -253,7 +275,7 @@ Page({
     this.data.goodsList.map((item, index) => {
       item.goods.map((el, idx) => {
         vm.data.list.map((listItem, listIdx) => {
-          if (listItem.id == el.id) {
+          if (listItem.id == el.id && listItem.num <= el.store) {
             if (listItem.num == 0) {
               vm.data.list.splice(listIdx, 1);
               vm.setData({

@@ -1,8 +1,8 @@
 <view class='bottomShadow'></view>
 <view class='avatar'>
 <view class='avatarArea'>
-<image class='avatarImg' src='/images/avatar.png'></image>
-<view class='avatarName'>MAN</view>
+<image class='avatarImg' src='{{user.headImg||"/images/avatar.png"}}'></image>
+<view class='avatarName'>{{user.nickName}}</view>
 </view>
 </view>
 
@@ -32,7 +32,7 @@
 
 </view>
 
-<view class='item'>
+<view class='item' bindtap='makePhoneCall'>
 <view class='title'>
 <image class='logo' src='/images/mine_icon4.png'></image>
 <view class='des'>客服</view>

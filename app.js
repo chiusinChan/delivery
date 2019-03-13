@@ -34,7 +34,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null,
-    cart:[]
+    userInfo: {nickName:"UserName"},
+    cart:[],
+    code:""
   }
 })

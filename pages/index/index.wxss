@@ -1,4 +1,4 @@
-.banner {
+.banner,swiper {
   height: 314rpx;
   width: 100%;
 }

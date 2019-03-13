@@ -6,7 +6,7 @@
       应付合计
       <text>  ￥{{sumMoney/100}}</text>
     </view>
-    <view class='sumButton'>结算</view>
+    <view class='sumButton' bindtap='createPayment'>付款结算</view>
   </view>
 
 
@@ -14,23 +14,23 @@
     <view class='infoItem'>
       <view class='infoKey'>收货人</view>
       <view class='infoValue'>
-        <input></input>
+        <input bindinput='inputName' value='{{reciverInfo.name}}'></input>
       </view>
     </view>
 
     <view class='infoItem'>
       <view class='infoKey'>手机号码</view>
       <view class='infoValue'>
-        <input></input>
+        <input type="number" bindinput='inputPhone' value='{{reciverInfo.phone}}'></input>
       </view>
     </view>
 
     <view class='infoItem'>
       <view class='infoKey'>地址信息</view>
       <view class='infoValue'>
-        <input></input>
+        <input value='{{reciverInfo.area}}' bindinput='inputArea'></input>
         <view class='logo'>
-          <image src='/images/location.png'></image>
+          <image bindtap='chooseAddress' src='/images/location.png'></image>
         </view>
       </view>
     </view>
@@ -38,7 +38,7 @@
     <view class='infoItem'>
       <view class='infoKey'>详细地址</view>
       <view class='infoValue'>
-        <input></input>
+        <input value='{{reciverInfo.address}}' bindinput='inputAddress'></input>
       </view>
     </view>
   </view>
@@ -64,7 +64,7 @@
         </view>
         <view class='num'>{{item.num}}</view>
 
-        <view class='plus' bindtap='add' data-id="{{item.id}}">
+        <view class='plus' bindtap='add' data-id="{{item.id}}"  data-num="{{item.num}}"  data-store="{{item.store}}">
           <image src='/images/add.png'></image>
         </view>
       </view>

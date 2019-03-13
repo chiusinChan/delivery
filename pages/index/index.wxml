@@ -1,7 +1,19 @@
 <view class='bottomShadow'></view>
 
 <view class='banner'>
-  <image src='/images/banner.png'></image>
+  <swiper
+  autoplay="ture">
+     <swiper-item>
+      <image src="/images/banner.png" class="slide-image" width="355" height="157" />
+    </swiper-item>
+       <swiper-item>
+      <image src="/images/banner.png" class="slide-image" width="355" height="157" />
+    </swiper-item>
+ 
+    <swiper-item>
+      <image src="/images/banner.png" class="slide-image" width="355" height="157" />
+    </swiper-item>
+</swiper>
 </view>
 <view class='wrap'>
   <scroll-view class='sideBar' scroll-y>
@@ -21,7 +33,7 @@
         <view class='info' >
           <view class='name'>{{el.name}}</view>
           <view class='des'>{{el.des}}</view>
-          <view class='sold'>月售361 暂9 点评网友推荐</view>
+          <view class='sold'>月售 {{el.sold}}  剩余 {{el.store}}</view>
           <view class='buy'>
             <view class='price'>￥
               <text>{{el.price/100}}</text> </view>
@@ -30,7 +42,7 @@
                 <image src='/images/delete.png'></image>
               </view>
               <view class='num'>{{el.num}}</view>
-              <view class='plus' data-id="{{el.id}}"  data-num="{{el.num}}" bindtap='add'>
+              <view class='plus' data-id="{{el.id}}" data-store="{{el.store}}"  data-num="{{el.num}}" bindtap='add'>
                 <image src='/images/add.png'></image>
               </view>
             </view>

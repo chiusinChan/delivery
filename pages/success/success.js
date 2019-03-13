@@ -1,39 +1,27 @@
-var lib = require('../../utils/util.js');
-var  app = getApp();
-
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    wx.login({
-      success(res) {
-        if (res.code) {
-          app.globalData.code=res.code;
-        }}
+
+  },
+  goToIndex() {
+    wx.reLaunch({
+      url: '/pages/index/index',
+      complete(err) {
+        console.log(err)
+      }
     })
-   
+
   },
-  /***
-   * 手机号授权
-   */
-  bindgetphonenumber({detail}) {
-    lib.init((user) => {
-      app.globalData.userInfo=user;
-      wx.reLaunch({
-        url: '../index/index',
-      })
-    }, detail)
-   
-  },
- 
 
   /**
    * 生命周期函数--监听页面初次渲染完成

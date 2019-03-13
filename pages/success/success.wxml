@@ -1,0 +1,9 @@
+<view class='sucWrap'>
+  <view class='successInfo'>
+    <image class='sucImg' src='/images/success.png'></image>
+    <text class='sucDesc'>订单支付成功</text>
+    <view class='goOnBuy'  bindtap='goToIndex'>继续购买</view>
+  </view>
+  </view>
+  
+ 
