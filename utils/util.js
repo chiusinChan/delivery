@@ -33,6 +33,7 @@ var lib = {
         });
         return;
       }
+      wx.setStorageSync('access_token', res.access_token)
       callback(res.user);
     })
 
@@ -103,6 +104,7 @@ var lib = {
         });
         return;
       }
+      var obj = res.data;
       console.log('createPayment');
       obj.success = function(res) {
         callback && callback();
@@ -120,13 +122,13 @@ var lib = {
 
     });
   },
-  authUser(code, callback) {
-    lib.http.post(lib.urls.authUser, code, function(res) {
-      if (res.result == 1) {
-        callback && callback(res.user);
-      }
-    })
-  },
+  // authUser(code, callback) {
+  //   lib.http.post(lib.urls.authUser, code, function(res) {
+  //     if (res.result == 1) {
+  //       callback && callback(res.user);
+  //     }
+  //   })
+  // },
   getUserInfo(callback) {
     lib.http.post(lib.urls.getUserInfo, {}, function(res) {
       if (res.result == 1) {
@@ -138,7 +140,7 @@ var lib = {
   getInfo(callback) {
     lib.http.post(lib.urls.getInfo, {}, function(res) {
       if (res.result == 1) {
-        callback && callback(res.user);
+        callback && callback(res.data);
       }
     })
   },
