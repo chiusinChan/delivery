@@ -108,7 +108,7 @@ var lib = {
         callback && callback();
       }
       obj.fail = function(err) {
-        if (err.extra.errMsg.indexOf('cancel')) return;
+        // if (err.extra.errMsg.indexOf('cancel')) return;
         wx.showModal({
           title: '付款失败',
           content: '请稍后重试',
