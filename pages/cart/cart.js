@@ -122,7 +122,7 @@ Page({
   },
   inputAddress({ detail }) {
     vm.setData({
-      ['reciverInfo.phone']: detail.value
+      ['reciverInfo.address']: detail.value
     })
 
   },
