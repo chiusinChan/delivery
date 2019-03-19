@@ -171,6 +171,11 @@ Page({
     wx.setStorageSync("reciverInfo", vm.data.reciverInfo)
     //收货人信息错误
     let flag=true;
+    console.log(vm.data.reciverInfo);
+    if (!vm.data.reciverInfo||JSON.stringify(vm.data.reciverInfo)==="{}"){
+      flag = false;
+    }
+    
     for(var k in vm.data.reciverInfo){
       if (!vm.data.reciverInfo[k]){
           flag=false;

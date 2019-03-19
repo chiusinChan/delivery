@@ -1,3 +1,4 @@
+<wxs src="../../utils/float.wxs" module="float" />
 <view class='bottomShadow'></view>
 
 <view class='banner'>
@@ -21,7 +22,7 @@
       <view class='photo'>
         <image src='{{item.img}}'></image>
       </view>
-      <view class='kind'>{{item.name}} {{item.price/100}}元</view>
+      <view class='kind'>{{item.name}} {{float(item.price/100)}}元</view>
       <view class='des'>{{item.des}}</view>
     </view>
   </scroll-view>
@@ -36,7 +37,7 @@
           <view class='sold'>月售 {{el.sold}}  剩余 {{el.store}}</view>
           <view class='buy'>
             <view class='price'>￥
-              <text>{{el.price/100}}</text> </view>
+              <text>{{float(el.price/100)}}</text> </view>
             <view class='store'>
               <view class='minus' data-id="{{el.id}}" data-num="{{el.num}}"  bindtap='minus'>
                 <image src='/images/delete.png'></image>

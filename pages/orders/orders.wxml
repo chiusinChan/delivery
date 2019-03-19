@@ -1,3 +1,5 @@
+<wxs src="../../utils/float.wxs" module="float" />
+
 <view class='bottomShadow'></view>
 <view class='bodyWrap'>
   <view class='tabTitle'>
@@ -36,7 +38,7 @@
 
       </view>
       <view class='more'>
-        <view class='price'>￥{{item.price/100}}</view>
+        <view class='price'>￥{{float(item.price/100)}}</view>
         <!-- <view class='again'>再来一单</view> -->
 
       </view>
@@ -74,7 +76,7 @@
 
       </view>
       <view class='more'>
-        <view class='price'>￥{{item.price/100}}</view>
+        <view class='price'>￥{{float(item.price/100)}}</view>
         <view class='again' data-id="{{item.id}}" bindtap='bugAgain'>再来一单</view>
 
       </view>

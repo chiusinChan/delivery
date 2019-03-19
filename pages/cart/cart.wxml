@@ -1,10 +1,11 @@
+<wxs src="../../utils/float.wxs" module="float" />
 <view class='bottomShadow'>
 </view>
 <view class='bodyWrap'>
   <view class="bottomSum">
     <view class='sumMoney'>
       应付合计
-      <text>  ￥{{sumMoney/100}}</text>
+      <text>  ￥{{float(sumMoney/100)}}</text>
     </view>
     <view class='sumButton' bindtap='createPayment'>付款结算</view>
   </view>
@@ -54,7 +55,7 @@
 
       </view>
       <view class='price'>
-        ￥{{item.price/100}}
+        ￥{{float(item.price/100)}}
       </view>
       <view class='store'>
 

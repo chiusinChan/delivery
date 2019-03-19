@@ -10,14 +10,14 @@ Page({
     menu: [{
         name: "早餐",
         title: "breakfast",
-        price: "1000",
+        price: "1001",
         des: "Taste Well",
         img: 'http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'
       },
       {
         name: "午餐",
         title: "lunch",
-        price: "1000",
+        price: "1980",
         des: "Taste Well",
         img: 'http://fuss10.elemecdn.com/9/c6/f3bc84468820121112e79583c24efjpeg.jpeg?imageView2/1/w/114/h/114'
       },
@@ -35,7 +35,7 @@ Page({
         goods: [{
             name: "seaFoodPizza",
             des: "large/hot",
-            price: "2500",
+            price: "101",
             num: 0,
             sold: 123,
             store: 20,
@@ -45,7 +45,7 @@ Page({
           {
             name: "seaFoodPizza",
             des: "large/hot",
-            price: "2500",
+            price: "198",
             num: 0,
             sold: 123,
             store: 20,
@@ -139,21 +139,21 @@ Page({
   },
 
   onLoad: function(op) {
-    console.log(op)
+    // console.log(op)
     vm = this;
-    var accessToken = wx.getStorageSync('access_token');
-    if (!accessToken){
-      wx.redirectTo({
-        url: '../login/login',
-      })
-    }
-    lib.getInfo((res)=>{
-        vm.setData({
-          menu:res.menu,
-          goodsList: res.goodsList
-        })
+    // var accessToken = wx.getStorageSync('access_token');
+    // if (!accessToken){
+    //   wx.redirectTo({
+    //     url: '../login/login',
+    //   })
+    // }
+    // lib.getInfo((res)=>{
+    //     vm.setData({
+    //       menu:res.menu,
+    //       goodsList: res.goodsList
+    //     })
 
-    });
+    // });
 
   },
   selectMenu(event) {
